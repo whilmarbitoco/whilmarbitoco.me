@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #24242b;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: auto;
+    top: 0;
+    z-index: 0;
+}
+
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.card {
+    width: 90%;
+    max-width: 440px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.card img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.card .links img {
+    width: 36px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+
+.card .links img:hover {
+    background: #c0c0c0;
+}
+
+h4.h-about {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+p.p-about {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    clear: left;
+}
+
+.skills img {
+    width: 30px;
+    border-radius: 0;
+}
+
+.skills {
+    /*display: none;*/
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navbar a {
+    float: center;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a.active {
+    border-bottom: solid #fff;
+}
+
+.project {
+    margin-top: 20px;
+    padding: 5px;
+    clear: left;
+}
+
+.project img {
+    border-radius: 0;
+}
+
+.project a {
+    text-align: left;
+    float: left;
+    text-decoration: none;
+    font-size: 10px;
+    color: #808080;
+    margin: 0 2px;
+    padding: 3px 5px;
+    border-radius: 30px;
+}
+
+.arrow {
+    float: right;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

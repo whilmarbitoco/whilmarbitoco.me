@@ -1,1 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Welcome to my portfolio! In my portfolio, you'll find a selection of my best work and a glimpse into my design process. I'm always looking for new opportunities to showcase my skills and make an impact. Take a look around and get in touch if you have any questions or want to collaborate."
+        />
+
+        <title>Whilmar Bitoco | Portfolio</title>
+
+        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="stylesheet" href="./assets/loading.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        />
+
+        <link rel="icon" type="image/x-icon" href="./assets/img/coding.png" />
+    </head>
+    <body>
+        <div id="particles-js">
+            <canvas
+                class="particles-js-canvas-el"
+                width="1903"
+                height="952"
+                style="
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                "
+            ></canvas>
+            <div id="app">
+                <div class="container">
+                    <div class="card">
+                        <div class="navbar">
+                            <a href="#home" class="active">Home</a>
+                            <a href="#skills">Skill</a>
+                            <a href="#certs">Certificate</a>
+                            <a href="#about">About</a>
+                            <a href="#project">Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="home" class="container">
+                    <div class="me card">
+                        <img src="./assets/img/boy.png" />
+                        <h2>Whilmar Bitoco</h2>
+                        <p>Front-End Web Developer</p>
+                        <div class="links">
+                            <a href="https://github.com/whilmarbitoco"
+                                ><img src="assets/img/github.png"
+                            /></a>
+                            <a href="#"
+                                ><img src="assets/img/linkedin.png"
+                            /></a>
+                            <a href="#"><img src="assets/img/twitter.png" /></a>
+                            <a href="mailto: admin@whilmarbitoco.me"
+                                ><img src="assets/img/email.png"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="skills" class="container">
+                    <div class="card">
+                        <i
+                            @click="toggle('skill')"
+                            v-show="!state"
+                            class="up arrow"
+                        ></i>
+                        <i
+                            @click="toggle('skill')"
+                            v-show="state"
+                            class="down arrow"
+                        ></i>
+                        <h4 class="h-about">Skills:</h4>
+
+                        <div id="skill" class="skills">
+                            <p class="p-about">
+                                Programming languages that I've used.
+                            </p>
+                            <img src="./assets/img/python-original.svg" />
+                            <img src="./assets/img/php-plain.svg" />
+                            <img src="./assets/img/javascript-plain.svg" />
+                            <img
+                                src="./assets/img/java-original-wordmark.svg"
+                            />
+                            <img src="./assets/img/html5-plain-wordmark.svg" />
+                            <img src="./assets/img/css3-plain-wordmark.svg" />
+                            <img src="./assets/img/bootstrap-original.svg" />
+                            <img src="./assets/img/tailwindcss-plain.svg" />
+                            <img
+                                src="./assets/img/mysql-original-wordmark.svg"
+                            />
+                            <img src="./assets/img/sqlite-original.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div id="certs" class="container">
+                    <div class="card">
+                        <i
+                            @click="toggle('cert')"
+                            v-show="!state"
+                            class="up arrow"
+                        ></i>
+                        <i
+                            @click="toggle('cert')"
+                            v-show="state"
+                            class="down arrow"
+                        ></i>
+                        <h4 class="h-about">Certificates:</h4>
+                        <div id="cert" class="certs">
+                            <p class="p-about">
+                                Here are the certificates that I have acquired
+                                over the the past years.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="container">
+                    <div class="card">
+                        <i
+                            @click="toggle('abt')"
+                            v-show="!state"
+                            class="up arrow"
+                        ></i>
+                        <i
+                            @click="toggle('abt')"
+                            v-show="state"
+                            class="down arrow"
+                        ></i>
+                        <h4 class="h-about">About Me:</h4>
+                        <div id="abt" class="about">
+                            <p class="p-about">
+                                Hi there! My name is Whilmar Bitoco and I am a
+                                17 year old front end web developer.<br />
+                                I am passionate about creating beautiful,
+                                functional websites and have been learning about
+                                web development for the past few years.<br />
+                                In my spare time, I enjoy experimenting with new
+                                technologies and learning about the latest
+                                trends in web design. <br />
+                                I am excited to continue growing and improving
+                                as a developer and to contribute to the online
+                                community of developers and designers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="project" class="container">
+                    <div class="card">
+                        <i
+                            @click="toggle('prj')"
+                            v-show="!state"
+                            class="up arrow"
+                        ></i>
+                        <i
+                            @click="toggle('prj')"
+                            v-show="state"
+                            class="down arrow"
+                        ></i>
+                        <h4 class="h-about">Projects:</h4>
+                        <div id="prj">
+                            <p class="p-about">
+                                Here's some project that I have done.
+                            </p>
+
+                            <div
+                                v-for="project in projects"
+                                :key="project.name"
+                                class="project"
+                            >
+                                <img :src="project.image_url" alt="" />
+                                <h3>{{ project.name }}</h3>
+                                <p>{{ project.description }}</p>
+                                <a
+                                    style="background-color: #fff"
+                                    :href="project.github"
+                                    >#github</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <footer>
+                            <p>Author: Whilmar Bitoco</p>
+                            <p>
+                                <a
+                                    style="text-decoration: none; color: #fff"
+                                    href="mailto:wb2c0@whilmarbitoco.me"
+                                    >wb2c0@whilmarbitoco.me</a
+                                >
+                            </p>
+                            <p>Whilmar Bitoco &#169; 2023</p>
+                            <p>
+                                edit this
+                                <a
+                                    style="
+                                        text-decoration: underline;
+                                        color: #fff;
+                                    "
+                                    href="https://github.com/whilmarbitoco/whilmarbitoco.me"
+                                    >page</a
+                                >
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spinner-box">
+            <div class="blue-orbit leo"></div>
+
+            <div class="green-orbit leo"></div>
+
+            <div class="red-orbit leo"></div>
+
+            <div class="white-orbit w1 leo"></div>
+            <div class="white-orbit w2 leo"></div>
+            <div class="white-orbit w3 leo"></div>
+        </div>
+        <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+        <script
+            src="axios.min.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script src="App.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./assets/particles.min.js"></script>
+        <script src="./assets/script.js"></script>
+        <script src="./assets/loading.js"></script>
+        <script src="./assets/nav.js"></script>
+    </body>
+</html>
